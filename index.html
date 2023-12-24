@@ -1,14 +1,26 @@
-body {
-/* 加载背景图 */
-background-image: url(Christmas_kitty.jpg);
-/* 背景图垂直、水平均居中 */
-background-position: center center;
-/* 背景图不平铺 */
-background-repeat: no-repeat;
-/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
-background-attachment: fixed;
-/* 让背景图基于容器大小伸缩 */
-background-size: cover;
-/* 设置背景颜色，背景图加载过程中会显示背景色 */
-background-color: #464646;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>全屏背景图片的网页</title>
+    <style>
+        /* 设置body的样式，确保背景图片铺满整个屏幕 */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 添加背景图片 */
+        .full-screen-background {
+            background-image: url('Christmas_kitty.jpg'); /* 指向您的图片 */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; /* 这将确保图片完整且铺满整个屏幕 */
+        }
+    </style>
+</head>
+<body>
+    <div class="full-screen-background"></div>
+</body>
+</html>
