@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>全屏背景图片的网页</title>
+    <title>猫咪，圣诞节快乐喔！</title>
     <style>
         /* 设置body的样式，确保背景图片铺满整个屏幕 */
         body, html {
@@ -16,7 +16,8 @@
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover; /* 这将确保图片完整且铺满整个屏幕 */
+            background-size: contain; /* 图片会根据屏幕大小缩放，但不会被裁剪 */
+            background-color: #000; /* 您可以设置一个背景颜色以填补未被图片覆盖的空间 */
         }
     </style>
 </head>
